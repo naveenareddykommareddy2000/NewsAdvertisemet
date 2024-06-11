@@ -1,0 +1,14 @@
+<!-- <div class="navbar">
+  <img src="assets/left-arrow.png" (click)="previousComponent()" alt="Previous" class="nav-arrow">
+  <img src="assets/right-arrow.png" (click)="nextComponent()" alt="Next" class="nav-arrow">
+</div>
+<router-outlet></router-outlet> -->
+
+<div class="container">
+  <button class="nav-button left" (click)="previousComponent()">&#60;</button>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+  <button class="nav-button right" (click)="nextComponent()">&#62;</button>
+</div>
+<router-outlet></router-outlet>

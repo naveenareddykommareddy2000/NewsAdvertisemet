@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .newspaper {
+    margin: 20px;
+  }
+  
+  .newspaper h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .newspaper .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .newspaper .content img,
+  .newspaper .content video {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  
