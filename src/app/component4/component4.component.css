@@ -21,7 +21,7 @@
   
   .newspaper .content img,
   .newspaper .content video {
-    max-width: 100%;
+    max-width: 50%;
     margin: 10px 0;
   }
   
