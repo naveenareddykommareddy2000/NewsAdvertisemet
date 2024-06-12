@@ -4,11 +4,14 @@
 </div>
 <router-outlet></router-outlet> -->
 
-<div class="container">
-  <button class="nav-button left" (click)="previousComponent()">&#60;</button>
-  <div class="content">
-    <router-outlet></router-outlet>
+<div class="outer-container">
+  <div class="container">
+    <div class="navigation left" (click)="previousComponent()" [class.disabled]="currentIndex === 0"><b>&lt;</b></div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="navigation right" (click)="nextComponent()" [class.disabled]="currentIndex === routes.length - 1"><b>&gt;</b></div>
   </div>
-  <button class="nav-button right" (click)="nextComponent()">&#62;</button>
 </div>
-<router-outlet></router-outlet>
+
+
