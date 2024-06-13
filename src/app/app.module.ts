@@ -8,6 +8,14 @@ import { Component2Component } from './component2/component2.component';
 import { Component3Component } from './component3/component3.component';
 import { Component4Component } from './component4/component4.component';
 import { PuzzleAddComponent } from './puzzle-add/puzzle-add.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomecideAddComponent } from './homecide-add/homecide-add.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -16,13 +24,22 @@ import { PuzzleAddComponent } from './puzzle-add/puzzle-add.component';
     Component2Component,
     Component3Component,
     Component4Component,
-    PuzzleAddComponent
+    PuzzleAddComponent,
+    HomecideAddComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

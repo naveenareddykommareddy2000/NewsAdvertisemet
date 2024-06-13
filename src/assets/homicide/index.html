@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    html, body {
+      background: #000000;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      flex-direction: column;
+    }
+    .fallback {
+      background: #000000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: none;
+    }
+    .fallback.state-visible {
+      display: block;
+    }
+    .fallback img {
+      object-fit: fill;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+
+
+
+
+<iframe src="https://public.flourish.studio/visualisation/3918860/embed" width="100%" height="100%">!-- PASTE IFRAME URL IN IFRAME SRC=" ". Only replace the iframe src url. Do not replace the entire iframe. --></iframe>
+
+
+
+  <div class="fallback">
+    <img src="assets/fallback.jpg" alt="Please connect to the internet to view this content">
+  </div>
+  <script>
+    function showFallback() {
+    	var video = document.getElementById('video');
+    	video.parentNode.removeChild(video);
+    	document.querySelector('.fallback').classList.add('state-visible');
+    }
+    window.addEventListener('DOMContentLoaded', function() {
+    	if (!navigator.onLine) {
+    		showFallback();
+        }
+    })
+  </script>
+</body>
+</html>

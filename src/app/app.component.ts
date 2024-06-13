@@ -41,9 +41,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
+  }
   title = 'angular-navigation-example';
   currentIndex = 0;
-  routes = ['component1', 'component2', 'component3', 'component4'];
+  routes = ['component1', 'component2', 'puzzleadd','component3', 'component4','homecideadd'];
 
   constructor(private router: Router) {}
 

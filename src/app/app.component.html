@@ -4,6 +4,27 @@
 </div>
 <router-outlet></router-outlet> -->
 
+
+<div class="menu-bar">
+  <span class="menu-icon" (click)="toggleMenu()">&#9776;</span>
+  <mat-icon 
+    aria-hidden="false" 
+    aria-label="Example home icon" 
+    fontIcon="home" 
+    routerLink="/Component1"
+    (click)="closeMenu()">
+  </mat-icon>
+
+  <div class="menu-links" [class.show]="menuOpen">
+    <a routerLink="/puzzleadd" (click)="closeMenu()">Puzzle Game</a>
+    <a routerLink="/homecideadd" (click)="closeMenu()">Homie Game</a>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
+
+
 <div class="outer-container">
   <div class="container">
     <div class="navigation left" (click)="previousComponent()" [class.disabled]="currentIndex === 0"><b>&lt;</b></div>

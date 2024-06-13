@@ -25,9 +25,38 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css",
+              "src/assets/puzzled/css/main.css",
+              "src/assets/puzzled/css/orientation_utils.css",
+              "src/assets/puzzled/css/reset.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/puzzled/js/jquery-3.2.1.min.js",
+              "src/assets/puzzled/js/howler.min.js",
+              "src/assets/puzzled/js/createjs-2015.11.26.min.js",
+              "src/assets/puzzled/js/screenfull.js",
+              "src/assets/puzzled/js/ctl_utils.js",
+              "src/assets/puzzled/js/CAreYouSurePanel.js",
+              "src/assets/puzzled/js/CButLevel.js",
+              "src/assets/puzzled/js/CChooseDifficultyPanel.js",
+              "src/assets/puzzled/js/CChooseImagePanel.js",
+              "src/assets/puzzled/js/CCreditsPanel.js",
+              "src/assets/puzzled/js/CEndPanel.js",
+              "src/assets/puzzled/js/CGame.js",
+              "src/assets/puzzled/js/CGameSettings.js",
+              "src/assets/puzzled/js/CGfxButton.js",
+              "src/assets/puzzled/js/CInterface.js",
+              "src/assets/puzzled/js/CLang.js",
+              "src/assets/puzzled/js/CMain.js",
+              "src/assets/puzzled/js/CMenu.js",
+              "src/assets/puzzled/js/CPiece.js",
+              "src/assets/puzzled/js/CPreloader.js",
+              "src/assets/puzzled/js/CTextButton.js",
+              "src/assets/puzzled/js/CToggle.js",
+              "src/assets/puzzled/js/settings.js",
+              "src/assets/puzzled/js/sprite_lib.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -87,6 +116,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
